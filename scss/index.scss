@@ -1,0 +1,51 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  //margin: 1rem;
+}
+
+html {
+  height: 100%;
+  background-color: red;
+  //border: black 6px dashed;
+}
+
+body {
+  min-height: 100%;
+  background-color: blue;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #ccc;
+  //padding: 2rem;
+}
+
+.item {
+  padding: 2rem;
+}
+
+.header,
+.footer {
+  background-color: #fcc;
+}
+
+.nav {
+  background-color: #cfc;
+
+  &.top {
+    position: sticky;
+    top: 0;
+  }
+}
+
+.content {
+  flex-grow: 1;
+  background-color: #ccf;
+}
